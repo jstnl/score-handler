@@ -5,25 +5,19 @@
  */
 package scorehandler.classes;
 
+import scorehandler.enums.GameType;
+
 /**
  *
  * @author justinli
  */
 public class Game {
-    private enum GameType {
-        EIGHTBALL,
-        NINEBALL,
-        TENBALL,
-        STRAIGHTPOOL,
-        ONEPOCKET
-    }
-    
     private Player player1;
     private Player player2;
     private int player1Score;
     private int player2Score;
     private int raceTo;
-    private 
+    private GameType gameType;
     
     public Player getPlayerOne() { return player1; }
     public Player getPlayerTwo() { return player2; }

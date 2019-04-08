@@ -14,6 +14,7 @@ import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.PUT;
+import scorehandler.helpers.DatabaseHelper;
 
 /**
  * REST Web Service
@@ -44,6 +45,6 @@ public class ScoreHandler {
             @FormParam("p2Id") String p2Id,
             @FormParam("p1Score") int p1Score,
             @FormParam("p2Score") int p2Score) {
-        int i = 1;
+        DatabaseHelper.createGame();
     }
 }
